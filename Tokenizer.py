@@ -1,4 +1,5 @@
 from Imports import TokenProcessing
+from Imports import Ranking
 import bs4 as bs
 import nltk
 import re
@@ -32,7 +33,12 @@ corpusStats = {
 }
 corpusLength = 0
 
-for reuters_file_index in range(22):
+# Loads the afinn_dictionary from file
+afinn_sentiments = Ranking.load_afinnSentiments()
+d_sentiment = 0
+documents_sentiment = {}
+
+for reuters_file_index in range(5):
 
     if reuters_file_index < 10:
         reuters_fileName = reuters_base_fileName + '0' + str(reuters_file_index) + '.sgm'
@@ -56,7 +62,7 @@ for reuters_file_index in range(22):
             articleTokens = titleTokens + bodyTokens # join the title and body tokens
 
             # Processes the list (removes unwanted entries, normalizes the tokens (terms) and removes duplicates
-            articleTokens = TokenProcessing.processList(articleTokens)
+            articleTokens, unique_articleTokens = TokenProcessing.processList(articleTokens)
             # articleTokens = TokenProcessing.process_unfiltered_list(articleTokens)  # Uncomment to get unfiltered tokenStream
 
 
@@ -69,6 +75,16 @@ for reuters_file_index in range(22):
             corpusStats['numOfDocs'] += 1
             corpusStats['docsLengths'][document_id] = len(articleTokens)
             corpusLength += corpusStats['docsLengths'][document_id]
+
+
+            # Generates document_sentiment
+            for token in unique_articleTokens:
+                if token in afinn_sentiments:
+                    d_sentiment += int(afinn_sentiments[token])
+
+            documents_sentiment[document_id] = d_sentiment
+            # documents_sentiment[document_id] = d_sentiment / corpusStats['docsLengths'][document_id]        # normalized sentiment
+            d_sentiment = 0
 
 
     # increments file index
@@ -84,6 +100,7 @@ tokenStream_fileName = 'Tokenization/tokenStream.txt'
 # tokenStream_fileName = 'Tokenization/unfiltered_tokenStream.txt'    # Uncomment to get unfiltered tokenStream
 
 corpusStats_fileName = 'Tokenization/corpusStats.txt'
+documents_sentiment_fileName = 'Tokenization/documentsSentiment.txt'
 
 
 # Save tokenStream to file
@@ -94,3 +111,7 @@ print("Token stream successfully saved to '" + tokenStream_fileName + "' file.")
 # Save corpusStats to file (number of documents, document lengths and avg document length)
 write_to_file(corpusStats, corpusStats_fileName)
 print("Corpus statistics successfully saved to '" + corpusStats_fileName + "' file.")
+
+# Save documents_sentiment to file (number of documents, document lengths and avg document length)
+write_to_file(documents_sentiment, documents_sentiment_fileName)
+print("Documents sentiment successfully saved to '" + documents_sentiment_fileName + "' file.")

@@ -51,11 +51,11 @@ def removeDuplicates(tokenList):
 def processList(tokenList):
     cleanedUpList = []
 
-    cleanedUpList = removeUnwantedEntries(tokenList)    # Removes non-word or number entries
-    cleanedUpList = normalizeList(cleanedUpList)        # normalizes list
-    # cleanedUpList = removeDuplicates(cleanedUpList)     # remove duplicates
+    cleanedUpList = removeUnwantedEntries(tokenList)           # Removes non-word or number entries
+    cleanedUpList = normalizeList(cleanedUpList)               # normalizes list
+    unique_cleanedUpList = removeDuplicates(cleanedUpList)     # remove duplicates
 
-    return cleanedUpList
+    return cleanedUpList, unique_cleanedUpList
 
 
 # Processes a Query

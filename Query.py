@@ -1,10 +1,14 @@
 from Imports import TokenProcessing
+from Imports import Ranking
 import os
 import json
 import math
+import sys
 
-# Calculates the RSV_result in order to rank the results
-def calculate_RSV(SPIMI_dictionary, corpusStats, term, docID):
+# Calculates the ranking_score based on the Okapi BM25 formula
+def calculate_RSV(term, docID, corpusStats):
+    global SPIMI_dictionary
+
     document_frequency = SPIMI_dictionary[term]['df']
     term_frequency = SPIMI_dictionary[term]['docs'][str(docID)]['tf']
     num_of_docs = int(corpusStats['numOfDocs'])
@@ -14,13 +18,22 @@ def calculate_RSV(SPIMI_dictionary, corpusStats, term, docID):
     b_parameter = 0.5
 
     # Okapi BM25 formula
-    RSV_result = math.log(num_of_docs / document_frequency) * (((k_parameter + 1) * term_frequency) / (k_parameter * ((1 - b_parameter) + b_parameter * (document_length / average_docs_length)) + term_frequency))
+    ranking_score = math.log(num_of_docs / document_frequency) * (((k_parameter + 1) * term_frequency) / (k_parameter * ((1 - b_parameter) + b_parameter * (document_length / average_docs_length)) + term_frequency))
 
-    return RSV_result
+    return ranking_score
+
+
+# Retrieves the sentiment for the given term
+def get_term_sentiment(term):
+    global SPIMI_dictionary
+
+    return SPIMI_dictionary[term]['sentiment']
 
 
 # Searches with AND operator
-def search_with_AND(terms, SPIMI_dictionary):
+def search_with_AND(terms):
+    global SPIMI_dictionary
+
     terms_df = {}
     terms_search_order = []
     result = []
@@ -59,26 +72,62 @@ def search_with_AND(terms, SPIMI_dictionary):
 
 
 # Searches with OR operator
-def search_with_OR(terms, SPIMI_dictionary, corpusStats):
-    docs_and_RSV = {}
-    result = []
+def search_with_OR(terms):
+    global SPIMI_dictionary
+    global ranking_options
+    global ranking_method
 
-    for term in terms:
-        if term in SPIMI_dictionary:
-            term_Docs = list(map(int, SPIMI_dictionary[term]['docs'].keys()))
+    term_Docs = []
+    docs_and_ranking = {}
+    result = []
+    high_to_low_ranking = True
+
+    if ranking_method == 'bm25':
+        corpusStats = Ranking.load_corpusStats()
+
+        for term in terms:
+            if term in SPIMI_dictionary:
+                term_Docs = list(map(int, SPIMI_dictionary[term]['docs'].keys()))
 
             for docID in term_Docs:
+                ranking_score = calculate_RSV(term, docID, corpusStats)
 
-                RSV_result = calculate_RSV(SPIMI_dictionary, corpusStats, term, docID)
-
-                if docID in docs_and_RSV:
-                    docs_and_RSV[docID] += RSV_result
+                if docID in docs_and_ranking:
+                    docs_and_ranking[docID] += ranking_score
                 else:
-                    docs_and_RSV[docID] = RSV_result
+                    docs_and_ranking[docID] = ranking_score
 
 
-    # Line of code from https://stackoverflow.com/questions/9919342/sorting-a-dictionary-by-value-then-key
-    result = [value for value in sorted(docs_and_RSV.items(), key=lambda kv: (-kv[1], kv[0]))]
+    elif ranking_method == 'sentiment':
+        documents_sentiment = Ranking.load_documentsSentiment()
+        query_sentiment = 0
+
+        for term in terms:
+            if term in SPIMI_dictionary:
+                term_Docs = list(map(int, SPIMI_dictionary[term]['docs'].keys()))
+
+                ranking_score = get_term_sentiment(term)
+                query_sentiment += ranking_score
+
+                for docID in term_Docs:
+                    docs_and_ranking[docID] = documents_sentiment[str(docID)]
+
+        if query_sentiment < 0:
+            high_to_low_ranking = False
+
+
+    else:
+        print('An invalid ranking method was chosen (\'' + ranking_method + '\'). Please change the ranking method to one of the following: ' + str(ranking_options) + '.')
+        sys.exit()
+
+
+    if high_to_low_ranking:
+        result = [value for value in sorted(docs_and_ranking.items(), key=lambda kv: (-kv[1], kv[0]))]
+
+    else:
+        result = [value for value in sorted(docs_and_ranking.items(), key=lambda kv: (kv[1], kv[0]))]
+
+
     totalCount = len(result)
 
     if totalCount > 0:
@@ -90,7 +139,7 @@ def search_with_OR(terms, SPIMI_dictionary, corpusStats):
 
 
 # Determines whether to use AND or OR operator
-def search_inverted_index(query, SPIMI_dictionary, corpusStats):
+def search_inverted_index(query):
 
     # many terms with AND operator '&'
     if '&' in query:
@@ -99,7 +148,7 @@ def search_inverted_index(query, SPIMI_dictionary, corpusStats):
         # Processes the list (removes unwanted entries, normalizes the tokens (terms) and removes duplicates
         terms = TokenProcessing.processQuery(terms)
 
-        search_with_AND(terms, SPIMI_dictionary)
+        search_with_AND(terms)
 
 
     # one or many terms with OR operator ' ' (space)
@@ -109,16 +158,17 @@ def search_inverted_index(query, SPIMI_dictionary, corpusStats):
         # Processes the list (removes unwanted entries, normalizes the tokens (terms) and removes duplicates
         terms = TokenProcessing.processQuery(terms)
 
-        search_with_OR(terms, SPIMI_dictionary, corpusStats)
+        search_with_OR(terms)
 
 
 
 # Execution starts here
 SPIMI_file_name = 'SPIMI/SPIMI_dictionary.txt'
-corpusStats_file_name = 'Tokenization/corpusStats.txt'
-
 SPIMI_dictionary = {}
-corpusStats = {}
+
+#                    0          1
+ranking_options = ['bm25', 'sentiment']
+ranking_method = ranking_options[1]
 
 # Load SPIMI dictionary
 if os.path.isfile(SPIMI_file_name):
@@ -128,16 +178,6 @@ if os.path.isfile(SPIMI_file_name):
 
 else:
     print("The SPIMI dictionary file was not found. Please run the 'SPIMI.py' file first.")
-
-
-# Load corpus statistics
-if os.path.isfile(corpusStats_file_name):
-    with open(corpusStats_file_name, 'r') as corpusStats_file:
-        file_content = corpusStats_file.read()
-        corpusStats = json.loads(file_content)
-
-else:
-    print("The corpus statistics file was not found. Please run the 'Tokenizer.py' file first.")
 
 
 print('''
@@ -156,7 +196,7 @@ continueScript = 'y'
 while continueScript and continueScript[0] == 'y':
     query = input('Please enter a query: ')
 
-    search_inverted_index(query, SPIMI_dictionary, corpusStats)
+    search_inverted_index(query)
 
     continueScript = input('Would you like to enter another query (y/n): ')
     print('\n')

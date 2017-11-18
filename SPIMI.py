@@ -1,3 +1,4 @@
+from Imports import Ranking
 import sys
 import os
 import json
@@ -38,7 +39,7 @@ def write_dict_to_file(fileBaseName, fileIndex, block_dictionary):
 
 
 # Processes the tokenStream and generates the inverted index
-def SPIMI_Invert(tokenStream, fileBaseName):
+def SPIMI_Invert(tokenStream, fileBaseName, afinn_sentiments):
     fileIndex = 0
     blockSizeLimit = 1     # Max size of block in MB
     block_dictionary = {}
@@ -63,7 +64,13 @@ def SPIMI_Invert(tokenStream, fileBaseName):
                 block_dictionary[tokenEntry_Token]['docs'][tokenEntry_DocID] = {'tf': 1}
 
         else:
-            block_dictionary[tokenEntry_Token] = {'df': 1, 'docs': {tokenEntry_DocID: {'tf': 1}}}
+            sentimentValue = 0
+
+            # Adds either a positive or negarive sentiment if the term is found in the afinn_sentiments
+            if tokenEntry_Token in afinn_sentiments:
+                sentimentValue = int(afinn_sentiments[tokenEntry_Token])
+
+            block_dictionary[tokenEntry_Token] = {'df': 1, 'sentiment': sentimentValue , 'docs': {tokenEntry_DocID: {'tf': 1}}}
 
     # creates the last block
     write_dict_to_file(fileBaseName, fileIndex, block_dictionary)
@@ -103,7 +110,7 @@ def merge_SPIMI(SPIMI_directory, blockBaseName):
                     full_SPIMI_dictionary[blockTerm]['df'] += blockTerm_data['df']
                     full_SPIMI_dictionary[blockTerm]['docs'].update(blockTerm_data['docs'])
                 else:
-                    full_SPIMI_dictionary[blockTerm] = {'df': blockTerm_data['df'], 'docs': blockTerm_data['docs']}
+                    full_SPIMI_dictionary[blockTerm] = {'df': blockTerm_data['df'], 'sentiment': blockTerm_data['sentiment'], 'docs': blockTerm_data['docs']}
 
     write_full_SPIMI_to_file(SPIMI_directory, full_SPIMI_dictionary)
 
@@ -113,6 +120,8 @@ def merge_SPIMI(SPIMI_directory, blockBaseName):
 # Execution starts here
 ts_file = 'Tokenization/tokenStream.txt'
 # ts_file = 'Tokenization/unfiltered_tokenStream.txt'    # Uncomment to get unfiltered tokenStream
+
+afinn_sentiments = Ranking.load_afinnSentiments()
 
 if os.path.isfile(ts_file):
     with open(ts_file, 'r') as tokenStream_file:
@@ -126,7 +135,7 @@ if os.path.isfile(ts_file):
         # Deletes all the previous files in the directory
         cleanDirectory(SPIMI_directory)
 
-        SPIMI_Invert(tokenStream, fileBaseName)
+        SPIMI_Invert(tokenStream, fileBaseName, afinn_sentiments)
         merge_SPIMI(SPIMI_directory, blockBaseName)
 
 else:
