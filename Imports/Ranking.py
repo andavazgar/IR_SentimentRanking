@@ -31,17 +31,17 @@ def load_afinnSentiments():
     return afinn_dictionary
 
 
-# Loads the documents sentiment
-def load_documentsSentiment():
-    documents_sentiment_file = 'Tokenization/documentsSentiment.txt'
-    documents_sentiment = {}
+# Loads the corpus information (document_id, url and tokens)
+def load_corpusInformation():
+    corpus_information_file = 'Tokenization/corpusInformation.txt'
+    corpus_information = {}
 
-    if os.path.isfile(documents_sentiment_file):
-        with open(documents_sentiment_file, 'r') as ds_file:
-            file_content = ds_file.read()
-            documents_sentiment = json.loads(file_content)
+    if os.path.isfile(corpus_information_file):
+        with open(corpus_information_file, 'r') as ci_file:
+            file_content = ci_file.read()
+            corpus_information = json.loads(file_content)
 
     else:
-        print("The documents sentiment file was not found. Please run the 'Tokenizer.py' file first.")
-    
-    return documents_sentiment
+        print("The corpus information file was not found. Please run the 'Tokenizer.py' file first.")
+
+    return corpus_information

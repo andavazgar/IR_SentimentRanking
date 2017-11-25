@@ -1,0 +1,13 @@
+Login to Library services
+Login with your netname OR enter name, barcode and library PIN:
+Concordia NetName Login
+Concordia NetName:
+Password:
+Library Barcode Login
+First OR Last Name:
+14-digit Barcode on Concordia ID:
+Library PIN:
+|
+Submitting this form is an acknowledgement that I have read and accepted the .
+If you have trouble using your Concordia Netname Login, try the Library Barcode Login.
+&nbsp

@@ -1,0 +1,15 @@
+Concordia News
+https://www.concordia.ca:80
+IT services RSS Feed
+https://www.concordia.ca:80/content/shared/en/news/offices/vps/iits/maintenance/2017/11/14/wireless-network-maintenance.html
+Wireless network maintenance: Nov 14
+https://www.concordia.ca:80/content/shared/en/news/offices/vps/iits/maintenance/2017/11/14/wireless-network-maintenance.html
+-
+https://www.concordia.ca:80/content/shared/en/news/offices/vps/iits/maintenance/2017/11/01/email-maintenance.html
+Faculty & staff email maintenance: Nov 03
+https://www.concordia.ca:80/content/shared/en/news/offices/vps/iits/maintenance/2017/11/01/email-maintenance.html
+-
+https://www.concordia.ca:80/content/shared/en/news/offices/vps/iits/maintenance/2017/10/31/network-maintenance.html
+Network maintenance: Nov 02
+https://www.concordia.ca:80/content/shared/en/news/offices/vps/iits/maintenance/2017/10/31/network-maintenance.html
+-

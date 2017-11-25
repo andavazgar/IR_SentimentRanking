@@ -1,0 +1,16 @@
+NEWS
+What is CONCAVE?
+Often we get a question like “what the heck is CONCAVE?” and so this is an effort to describe who and what we are.
+What is CONCAVE? CONCAVE stands for Concordia Center for Advanced Vehicle Engineering. We are a mechanical engineering group of 8 faculty and 47 students, 2 technical staff, and one secretary.
+Vehicle engineering encompasses a diverse cross-section of engineering, making our research center a rich place of engineering ideas.
+Along with world-class faculty and students we insist on putting the student close to faculty, staff and industry. CONCAVE is as much an environment as it is a research center. We focus on achieving the synergy of ideas and people to learn how to research, to solve, to apply, and ultimately create.
+Our students regularly win top engineering employment placement.
+Our CONCAVE faculty members are a group of world-recognized experts in vehicle engineering, vibration, sound, acoustics, and MEMS.
+CONCAVE is currently working on several interesting projects. One project involves the study of mechanical vibration of Montreal metro cars, a project in collaboration with the IRSST. Another project for Transport Quebec involves the study of rumble strips to evaluate bicycle safety and community noise. Another project involves the implementation of smart cards in vehicles as an evaluation tool for driving habits.
+Our recent prize-winning tank truck design is generating great interest in the transportation industry.
+Our latest major research for Pratt and Whitney encompasses the development and application of MEMS for aerospace applications. We are also developing tactile sensors for surgical applications, and smart structures for space applications.
+World-Class Research
+CONCAVE has developed and led the establishment of two world standards. ISO 5982 for whole body vibration and ISO 10068 for hand-arm vibration are the products of Dr. Paul-Emile Bouleau and Dr. Subhash Rakheja. CONCAVE is constantly in the forefront of the assessment, measurement and simulation of vibration and its transmission to the human body.
+Current projects involve the evaluation of a world standard for anti-vibration gloves, and a group study of mechanical process of vascular skeletal disorders resulting from worker manipulation of industrial power tools.
+At the heart of CONCAVE is a welcome — and the attitude of “Driving Excellence”.
+Last update: Tuesday, 31-Aug-2010 10:09:28 EDT

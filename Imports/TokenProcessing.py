@@ -53,9 +53,8 @@ def processList(tokenList):
 
     cleanedUpList = removeUnwantedEntries(tokenList)           # Removes non-word or number entries
     cleanedUpList = normalizeList(cleanedUpList)               # normalizes list
-    unique_cleanedUpList = removeDuplicates(cleanedUpList)     # remove duplicates
 
-    return cleanedUpList, unique_cleanedUpList
+    return cleanedUpList
 
 
 # Processes a Query

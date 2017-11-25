@@ -1,0 +1,54 @@
+Accessibility Tools
+Text Size:
+Breadcrumb
+Search
+Search Query
+Main Menu
+Homepage
+Who we are
+HVG (Hardware Verification Group) is one of the several research labs in the department of
+in .
+HVG mission is the development of methodologies, algorithms and tools for the formal and semi-formal verification of hardware, embedded and physical systems.
+HVG was founded in 1996 by
+and is currently composed of more than 20 .
+HVG conducted several projects in collaboration with
+HVG research is funded by various
+and sponsored by several .
+Social Events
+Click the image above to go to our albums!
+What we do
+Formal Analysis of Control Systems
+HVG in the news
+“Student success is more gratifying than any prize”
+“Qui sécurise les systèmes de sécurité?”
+“La Verification” (Dossier technologies de l’information)
+The OIQ premier magazine (PLAN)
+“Putting the tea in teaching”
+“Ingénierie - A la traque des défaillances catastrophiques”
+Version
+Partners
+Organized Conferences
+More about HVG
+Quick Link
+Recent Publications
+(IGI Global Pub, 2015)
+(IGI Global Pub, 2014)
+(TIE, 2015)
+(FAC 2014)
+(MCS 2014)
+(DAC 2015)
+(FMICS 2015)
+(FMICS 2015)
+Concordia University
+Tools & Quicklinks
+Concordia University - Hardware Verification Group
+1455 de Maisonneuve Blvd. W, EV005.139, Montreal, Quebec, Canada H3G 1M8
+Telephone (1) 514-848-2424
+ext. 3114
+|
+|
+Copyright © 2017 Concordia University |
+Page Info
+Page Title: Homepage - Concordia University - Montreal, Quebec, Canada
+Page URL:http://hvg.ece.concordia.ca/index.php ...
+Date Printed: Mon November 20, 2017

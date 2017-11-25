@@ -1,0 +1,15 @@
+Concordia News
+https://www.concordia.ca:80
+IT services RSS Feed
+https://www.concordia.ca:80/content/shared/en/news/offices/vps/iits/notices/2017/11/13/network-performance-issues-nov-13.html
+Network performance issues - Google resources - resolved
+https://www.concordia.ca:80/content/shared/en/news/offices/vps/iits/notices/2017/11/13/network-performance-issues-nov-13.html
+-
+https://www.concordia.ca:80/content/shared/en/news/offices/vps/iits/notices/2017/11/02/update-wireless-internet-connection-ios11.html
+*Update* Wireless internet connection - iOS 11
+https://www.concordia.ca:80/content/shared/en/news/offices/vps/iits/notices/2017/11/02/update-wireless-internet-connection-ios11.html
+-
+https://www.concordia.ca:80/content/shared/en/news/offices/vps/iits/notices/2017/10/31/patching-wireless-devices.html
+Let's get patching - Time to update your wireless devices!
+https://www.concordia.ca:80/content/shared/en/news/offices/vps/iits/notices/2017/10/31/patching-wireless-devices.html
+-

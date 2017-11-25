@@ -1,0 +1,149 @@
+Groupbox
+Search for Classes
+Enter Search Criteria below
+or
+Search for Classes
+Class Search Criteria
+Term
+ALL TERMS (2017-2018)
+Summer 2017
+Fall 2017
+Fall/Winter 2017-18
+Winter 2018
+Spring 2018 (CCE only)
+Summer 2018 (CCE only)
+Select at least 2 search criteria.
+Select Search to view your search results.
+Class Search
+Class Search
+Course Career
+Undergraduate
+Graduate
+Continuing Education
+Professional Development
+Research
+Course Number
+200
+300
+400
+Course Level
+(Credit Course Only)
+500
+600
+700
+800
+Department or Faculty
+CONCORDIA UNIVERSITY
+JOHN MOLSON EXECUTIVE CENTRE
+SCHOOL OF GRADUATE STUDIES
+STUDENT SUCCESS CENTRE
+Graduate and Professional Skil
+FACULTY OF FINE ARTS
+Art Education
+Art History
+Cinema
+Contemporary Dance
+Creative Arts Therapies
+Design and Computation Arts
+Fine Arts
+Music
+Studio Arts
+Theatre
+FACULTY OF ENGIN. & COMP SCI
+Building Civil & Environ Engin
+Centre for Engineer in Society
+Chemical & Materials Engin.
+Civil Engineering
+Computer Sc. & Software Engin.
+Dean of Engineering
+Electrical and Computer Engin.
+Institute for Information Sys
+Mech, Indu & Aerospace Eng.
+JOHN MOLSON SCHOOL OF BUSINESS
+Accountancy
+Aviation MBA
+Economics - JMSB
+Executive MBA
+Finance
+General Administration
+Goodman Inst - Investment Mgmt
+International Business
+Management
+Marketing
+Supply Chain & Business Mgmnt
+FACULTY OF ARTS & SCIENCE
+Applied Human Sciences
+Biology
+Chemistry and Biochemistry
+Classics
+Classics, Mod Lang&Linguistics
+Communication Studies
+Dean of Arts & Science(Office)
+Economics
+Education
+English
+Etudes Francaises
+Exercise Science
+Geography, Planning &Environmt
+Geology
+Historical - Other
+History
+Interdisciplinary Studies
+Journalism
+Liberal Arts College
+Loyola International College
+Mathematics and Statistics
+Philosophy
+Physics
+Political Science
+Psychology
+Religions and Cultures
+School of Community&Public Aff
+School of Irish Studies
+Science College
+Simone deBeauvoir Inst&Wom Std
+Sociology and Anthropology
+T.E.S.L.
+Theological Studies
+CENTRE CONTINUING EDUCATION
+Business Administration
+CCE Corporate Training
+Communications
+Computer Institute
+French
+Intensive English
+Non-Intensive English
+Photography
+Spanish
+Study Skills
+Additional Search Criteria
+Additional Search Criteria
+(Example: 13:00)
+Class Times
+to
+Days of Week
+Mon
+Tues
+Wed
+Thurs
+Fri
+Sat
+Sun
+Sir George Williams (Downtown)
+Location
+Loyola
+Online Courses
+Instructor Last Name
+example: statistics
+Course Keyword
+example: 1136
+Class Nbr
+Mode of Instruction
+Blended Learning
+In Person
+On-Line
+t
+Help
+test
+Default Local Node:DbName:Portal:Node:WorkCenter Id:Url:
+test

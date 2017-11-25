@@ -1,8 +1,5 @@
 from Imports import TokenProcessing
-from Imports import Ranking
-import bs4 as bs
 import nltk
-import re
 import os
 import json
 
@@ -23,8 +20,13 @@ def write_to_file(dataObject, fileName):
 # Execution starts here
 nltk.data.path.append("./nltk/nltk_data")
 
-reuters_file_index = 0
-reuters_base_fileName = 'Reuters-21578/reut2-0'
+
+corpus_directory = 'Corpus/'                    # Path of the corpus documents
+corpus_files = os.listdir(corpus_directory)     # List of documents to tokenize (corpus)
+file_processing_counter = 0                     # Counter (total number of documents that have been processed / tokenized)
+total_num_corpus_files = len(corpus_files)      # Total number of files to tokenize
+corpus_information = []                         # Contains the url and tokens for each document in the corpus
+
 tokenStream = []
 corpusStats = {
     'numOfDocs': 0,
@@ -33,62 +35,48 @@ corpusStats = {
 }
 corpusLength = 0
 
-# Loads the afinn_dictionary from file
-afinn_sentiments = Ranking.load_afinnSentiments()
-d_sentiment = 0
-documents_sentiment = {}
 
-for reuters_file_index in range(5):
+print('Processing...', end='\r')
 
-    if reuters_file_index < 10:
-        reuters_fileName = reuters_base_fileName + '0' + str(reuters_file_index) + '.sgm'
-    else:
-        reuters_fileName = reuters_base_fileName + str(reuters_file_index) + '.sgm'
+for fname in corpus_files:
 
-    print("Processing '" + reuters_fileName + "' ...")
+    # Skips files that are not .txt
+    if not fname.endswith('.txt'):
+        continue
 
-    with open(reuters_fileName, 'r', encoding='utf-8', errors='ignore') as file:
-        file_content = file.read()
-        soup = bs.BeautifulSoup(file_content, 'html.parser')
+    file_processing_counter += 1
 
-        for article in soup.find_all('reuters'):
-            document_id = article.get('newid')
-            title = article.title.text if article.title else ''
-            body = article.body.text if article.body else ''
+    document_id = len(corpus_information)
+    formatted_url = fname.replace('_', '.').replace('--', '/')[:-4]     # Converts the filename to url
+    document_info = {}
 
+    document_info['url'] = formatted_url
 
-            titleTokens = nltk.word_tokenize(title)  # Tokenize the article's title
-            bodyTokens = nltk.word_tokenize(body)    # Tokenize the article's body
-            articleTokens = titleTokens + bodyTokens # join the title and body tokens
+    file_name = corpus_directory + fname
 
-            # Processes the list (removes unwanted entries, normalizes the tokens (terms) and removes duplicates
-            articleTokens, unique_articleTokens = TokenProcessing.processList(articleTokens)
-            # articleTokens = TokenProcessing.process_unfiltered_list(articleTokens)  # Uncomment to get unfiltered tokenStream
+    print('Tokenizing file number: ' + str(file_processing_counter) + ' of ' + str(total_num_corpus_files), end='\r')
 
+    with open(file_name, 'r', encoding='utf-8', errors='ignore') as file:
+        document_text = file.read()
+        document_tokens = nltk.word_tokenize(document_text)    # Tokenize the document text
 
-            # Appends the article's tokens to the tokenStream
-            for token in articleTokens:
-                tokenStream.append([token, document_id])
+        # Processes the list (removes unwanted entries, normalizes the tokens (terms)
+        document_tokens = TokenProcessing.processList(document_tokens)
+        # document_tokens = TokenProcessing.process_unfiltered_list(document_tokens)  # Uncomment to get unfiltered tokenStream
+
+        document_info['tokens'] = document_tokens
+        corpus_information.append(document_info)    # Adds the document_info (url and tokens) the the corpus_information
 
 
-            # Store corpus statistics
-            corpusStats['numOfDocs'] += 1
-            corpusStats['docsLengths'][document_id] = len(articleTokens)
-            corpusLength += corpusStats['docsLengths'][document_id]
+        # Appends the document's tokens to the tokenStream
+        for token in document_tokens:
+            tokenStream.append([token, document_id])
 
 
-            # Generates document_sentiment
-            for token in unique_articleTokens:
-                if token in afinn_sentiments:
-                    d_sentiment += int(afinn_sentiments[token])
-
-            documents_sentiment[document_id] = d_sentiment
-            # documents_sentiment[document_id] = d_sentiment / corpusStats['docsLengths'][document_id]        # normalized sentiment
-            d_sentiment = 0
-
-
-    # increments file index
-    reuters_file_index += 1
+        # Store corpus statistics
+        corpusStats['numOfDocs'] += 1
+        corpusStats['docsLengths'][document_id] = len(document_tokens)
+        corpusLength += corpusStats['docsLengths'][document_id]
 
 
 
@@ -100,7 +88,7 @@ tokenStream_fileName = 'Tokenization/tokenStream.txt'
 # tokenStream_fileName = 'Tokenization/unfiltered_tokenStream.txt'    # Uncomment to get unfiltered tokenStream
 
 corpusStats_fileName = 'Tokenization/corpusStats.txt'
-documents_sentiment_fileName = 'Tokenization/documentsSentiment.txt'
+corpus_information_fileName = 'Tokenization/corpusInformation.txt'
 
 
 # Save tokenStream to file
@@ -112,6 +100,6 @@ print("Token stream successfully saved to '" + tokenStream_fileName + "' file.")
 write_to_file(corpusStats, corpusStats_fileName)
 print("Corpus statistics successfully saved to '" + corpusStats_fileName + "' file.")
 
-# Save documents_sentiment to file (number of documents, document lengths and avg document length)
-write_to_file(documents_sentiment, documents_sentiment_fileName)
-print("Documents sentiment successfully saved to '" + documents_sentiment_fileName + "' file.")
+# Save corpus_information to file (document_id, url and tokens). Used in Query.py
+write_to_file(corpus_information, corpus_information_fileName)
+print("Corpus information successfully saved to '" + corpus_information_fileName + "' file.")

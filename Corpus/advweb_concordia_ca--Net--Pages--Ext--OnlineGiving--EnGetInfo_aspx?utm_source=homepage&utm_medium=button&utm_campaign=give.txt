@@ -1,0 +1,464 @@
+Tax receipts will be issued according to Canada Revenue Agency (CRA) guidelines.
+The CRA requires that donation receipts bear the name and address of the donor.
+Fields marked with an asterisk (*) are mandatory.
+Donor Information
+*I am giving as a...
+Alumnus/a
+Concordia Parent
+Student
+Faculty/Staff
+Concordia Retiree
+Other
+*Prefix:
+Select...
+Dr
+Hon
+Me
+Mr
+Ms
+Mrs
+Prof
+*First Name:
+*Last Name:
+*Street Address1:
+Street Address2:
+*City:
+*Province/State:
+Select...
+Alberta
+British Columbia
+Manitoba
+New Brunswick
+Newfoundland And Labrador
+Northwest Territories
+Nova Scotia
+Nunavut
+Ontario
+Prince Edward Island
+Quebec
+Saskatchewan
+Yukon Territory
+-------------------------
+Alabama
+Alaska
+Arizona
+Arkansas
+California
+Colorado
+Connecticut
+Delaware
+District of Columbia
+Florida
+Georgia
+Hawaii
+Idaho
+Illinois
+Indiana
+Iowa
+Kansas
+Kentucky
+Louisiana
+Maine
+Maryland
+Massachusetts
+Michigan
+Minnesota
+Mississippi
+Missouri
+Montana
+Nebraska
+Nevada
+New Hampshire
+New Jersey
+New Mexico
+New York
+North Carolina
+North Dakota
+Ohio
+Oklahoma
+Oregon
+Pennsylvania
+Rhode Island
+South Carolina
+South Dakota
+Tennessee
+Texas
+U.S. Military Americas
+U.S. Military Europe
+U.S. Military Pacific
+Utah
+Vermont
+Virginia
+Washington
+West Virginia
+Wisconsin
+Wyoming
+-------------------------
+Not Applicable
+*Postal/Zip Code:
+*Country:
+Canada
+U.S.A.
+Afars And Issas
+Afghanistan
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antigua And Barbuda
+Argentina
+Armenia
+Aruba
+Australia
+Austria
+Azerbaijan
+Azores
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia/Hercegovina
+Botswana
+Brazil
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burma
+Burundi
+Cambodia
+Cameroun
+Canal Zone
+Canary Islands
+Cape Verde Islands
+Cayman Islands
+Central African Republic
+Ceuta
+Chad
+Channel Islands
+Chile
+China
+Christmas Island
+Cocos Islands
+Colombia
+Comoro Islands
+Congo
+Cook Islands
+Costa Rica
+Croatia
+Cuba
+Cyprus
+Czech Republic
+Czechoslovakia
+Democratic Rep. Congo
+Denmark
+Dominica
+Dominican Republic
+Ecuador
+Egypt
+El Salvador
+England
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Faeroe Islands
+Falkland Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Holland
+Honduras
+Hong Kong
+Hungary
+Iceland
+Ifni
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle Of Man
+Israel
+Italy
+Ivory Coast
+Jamaica
+Japan
+Jordan
+Kazakhstan
+Kenya
+Kirabiti
+Kirghizia
+Kuwait
+Laos
+Latvia
+Lebanon
+Leeward Islands
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macao
+Macedonia
+Madagascar
+Malawi
+Malaysia
+Maldive Islands
+Mali
+Malta
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Melilla
+Mexico
+Moldova
+Monaco
+Mongolia
+Montserrat
+Morocco
+Mozambique
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Islands
+North Korea
+Northern Ireland
+Norway
+Oman
+Pacific Islands Trust Ty
+Pakistan
+Palestine
+Panama
+Papua-New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Portuguese Timor
+Puerto Rico
+Qatar
+Reunion
+Romania
+Russia
+Rwanda
+Ryukyu Islands
+San Marino
+Sao Tome & Principe
+Saudi Arabia
+Scotland
+Senegal
+Serbia
+Seychelles
+Sierre Leone
+Sikkim
+Singapore
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Korea
+South West Africa
+South Yemen
+Spain
+Sri Lanka
+St. Helena
+St. Lucia
+St. Pierre & Miquelon
+St. Kitts/Nevis
+St.Vincent & Grenadine
+Sudan
+Suriname
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau Islands
+Tonga Islands
+Trinidad & Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks & Caicos
+Tuvalu
+U.S.S.R
+Uganda
+Ukraine
+United Arab Emirates
+United Kingdom
+Uruguay
+Uzbekistan
+Vanuata
+Vatican City
+Venezuela
+Vietnam
+Virgin Islands (Us)
+Wake & Midway Islands
+Wales
+Wallis & Fortuna Islands
+Western Sahara
+Western Samoa
+Windward Islands
+Yemen
+Yugoslavia
+Zambia
+Zimbabwe
+*Telephone:
+*Email Address:
+*Confirm Email Address:
+Latest Degree Earned:
+Degree Year:
+(YYYY)
+Faculty:
+Select...
+Faculty of Arts and Science
+John Molson School of Business
+Faculty of Engineering and Computer Science
+Faculty of Fine Arts
+Gift Information
+**Currency in Canadian dollars only.**
+*I would like to support:
+Select...
+Centre for the Arts in Human Development
+Chancellor's First Generation Fund
+Concordia Concrete Canoe Team
+Concordia Libraries
+Concordia Refugee Sponsorship Assistance Program
+Concordia Shuffle
+Concordia's Greatest Needs
+Concrete Toboggan Team 2016-17
+District 3 Innovation Centre
+Faculty of Arts and Science
+Faculty of Engineering and Computer Science
+Faculty of Fine Arts
+Faculty of Fine Arts Jerusalem Field School
+Faculty of Fine Arts Student Refugee Fund
+Garnet Key Endowment
+Graduating Class Gift Fund
+Icing Wind Tunnel
+JMSB Case Competition Team
+John Molson School of Business
+John Molson School of Business Building Fund
+Leonard & Bina Ellen Art Gallery
+Loyola College Alumni Endowment
+MBA International Case Competition
+PERFORM Centre
+Recreation and Athletics
+Research and Graduate Studies Development Fund
+SAE Competition Fund
+Scholarships, Bursaries and Fellowships
+Senior Students Endowment Fund
+Sir George Williams Scholarship and Bursary Fund
+Space Concordia
+Student Emergency & Food Fund
+Student Volunteer Support for Refugees Fund
+Sustainability Dev. Fund - Community Engagement
+Sustainability Dev. Fund - Operational & Environmental
+Sustainability Dev. Fund - Student & Student Group Initiatives
+Sustainability Dev. Fund - Teaching, Learning & Research
+Sustainability Development Fund
+TeamMTL – Solar Decathlon China 2017
+OR direct my gift to a specific scholarship/fund:
+Please direct my gift to a specific Recreation and Athletics designation:
+Select...
+Recreation and Athletics
+Friends of Concordia Baseball
+Friends of Concordia Cross-Country
+Friends of Concordia Football
+Friends of Concordia Golf
+Friends of Concordia Hockey
+Friends of Concordia Men's Basketball
+Friends of Concordia Men's Hockey
+Friends of Concordia Men's Rugby
+Friends of Concordia Men's Soccer
+Friends of Concordia Skiing
+Friends of Concordia Women's Basketball
+Friends of Concordia Women's Hockey
+Friends of Concordia Women's Rugby
+Friends of Concordia Women's Soccer
+Friends of Concordia Wrestling
+One-time gift of $
+Recurring monthly gift of $
+by credit card.
+New pledge of
+$
+made in
+2
+3
+4
+5
+annual instalments of
+I will make my first payment now.
+Reminders for future pledge instalments will be sent by mail.
+Payment of $
+on an existing pledge.
+*I am giving in response to:
+Select...
+A letter from Concordia
+An email from Concordia
+A telephone call from a student fundraiser
+Recent contact with a university employee or volunteer
+A FundOne crowdfunding appeal
+None of the above
+Make my gift in honour or memory of a person.
+I work for a matching gift company:
+Donors residing in the United States have two giving options:
+If you are a Concordia graduate, or a member of a student or graduate’s immediate family, you can give directly to the university and use the Concordia donation receipt when filing your U.S. income tax return.
+If you did not attend Concordia (or don't have a family member who is a Concordia student or graduate) and you wish to receive a donation receipt for U.S. tax purposes, please donate to the American Friends of Concordia
+University, an independent charity in the United States created to advance the mission of Concordia University. Mail your cheque, payable to American Friends of Concordia University, to the following address and suggest an area that you
+would like your donation to support.
+American Friends of Concordia University: c/o Roha and Flaherty, 1725 I Street, NW Suite 300, Washington, DC 20006-2423 Telephone: 202-833-0033
+Concordia UniversityAdvancement & Alumni Relations
+1455 de Maisonneuve Blvd. W.
+Suite FB520
+Montreal, QC H3G 1M8
+Tel: 514-848-2424 Ext.3884
+Toll free: 1-888-777-3330
+Fax: 514-848-2826
+Registration: 10696 6591 RR0001 |
+|

@@ -1,0 +1,67 @@
+Concordia University
+https://www.concordia.ca/content/shared/en/news/main/stories/2017/10/11/new-research-a-solution-to-office-thermostat-wars.html
+Study resources
+Campus services
+What's new
+Faculties, Schools & Colleges
+Study resources
+Campus services
+What's new
+Faculties, Schools & Colleges
+Concordia
+Directories
+Search
+/
+Faculty of Engineering & Computer Science
+NEW RESEARCH: Finally! A solution to office thermostat wars
+Two Concordians engineered a cloud-based system to improve comfort, productivity and energy efficiency
+Posted on October 11, 2017
+|
+By: Laura Dutton
+No matter the season, thermostat wars rage in offices worldwide. Workers bicker over the temperature, alternately complaining that it’s too hot or too cold. Thankfully, Concordia researchers may have developed a solution.
+A new study published in the
+proposes a method that simultaneously optimizes individual office workers’ productivity and energy consumption costs by automating the control of indoor environmental conditions including air quality, temperature and lighting.
+“Improving the quality of the office-building environment impacts the comfort of employees, which in turn influences their productivity,” says , professor in the .
+He conducted the study with Farhad Mofidi (PhD 17), a recent graduate in building engineering.
+How it works
+The researchers simulated their method in an open-air Montreal office building with five zones and four occupants per zone. They tested different occupancy scenarios and outdoor weather conditions and took into consideration the employees’ thermal tolerance.
+Using data analysis techniques, they modelled the preferences of each office worker. As a result, they could simulate worker-preferred indoor temperatures, ventilation rates, natural illumination and artificial lighting based on sensors placed throughout the office.
+“We considered several parameters, including energy exchange processes across the building, sets of indoor and outdoor environmental parameters, energy prices, indoor air quality, occupants' activities and personalized thermal and visual preferences,” Mofidi explains.
+“The proposed method is able to act as the brain behind the decision-making system of a cloud-based energy management platform.”
+Potential for major savings
+Their results? Reduced energy costs and an upsurge in occupants’ overall productivity.
+In fact, the proposed method is capable of improving the productivity of employees by up to $1,000 per year per person (assuming a fixed productivity rate of $20 per hour).
+This aligns with a 2011
+which estimated that economic benefits of $17 to 26 billion are achievable annually by improving indoor environmental quality of office buildings across the United States.
+Buildings where comfort conditions are controlled at a group- or zone-level, on the other hand, risk neglecting occupants’ individual temperature preferences which can cause productivity losses.
+This study’s research was supported by the Natural Sciences and Engineering Research Council of Canada under the Discovery Grant Program.
+Read the cited study, “.”
+Related Links
+Related stories
+Related topics
+Latest stories
+Find an expert
+Search for an expert to comment on any topicEnter a phrase or keyword
+Most popular
+Back to top
+© Concordia University
+Concordia University - Call us at 514-848-2424
+Sir George Williams Campus
+1455 De Maisonneuve Blvd. W.
+Montreal, Quebec, Canada
+H3G 1M8
+Loyola Campus
+7141 Sherbrooke Street W.
+Montreal, Quebec, Canada
+H4B 1R6
+© Concordia University
+Share this page
+Sir George Williams Campus
+1455 De Maisonneuve Blvd. W.
+Montreal, Quebec, Canada
+H3G 1M8
+Loyola Campus
+7141 Sherbrooke Street W.
+Montreal, Quebec, Canada
+H4B 1R6
+© Concordia University

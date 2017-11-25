@@ -1,0 +1,28 @@
+Breadcrumb
+My Library
+Search Options (with tips)
+Author
+Title
+Journal Title
+Subject Heading
+Call Number
+---------------------------
+Video Search
+---------------------------
+Advanced Keyword
+Author/Title
+Government Document Number
+ISBN/ISSN/Music Number
+Other Number (OCLC)
+Special Collections
+---------------------------
+Database Search (Name and Subject)
+Course Textbook Search
+Enter your Course Code, for example: MANA 369
+Search:
+Type as much or as little of the course code as you wish. For example:
+BIOL 200
+MBA 618
+PSYC
+Digital course readings are available at
+Tools & Quicklinks

@@ -1,0 +1,55 @@
+Concordia University
+https://www.concordia.ca/content/shared/en/events/artsci/physics/2017/11/20/microscopic-stress-and-nanoscale-mechanics-of-biomolecular-syste.html
+Study resources
+Campus services
+What's new
+Faculties, Schools & Colleges
+Study resources
+Campus services
+What's new
+Faculties, Schools & Colleges
+Concordia
+Directories
+Search
+/
+Events
+Microscopic stress and nanoscale mechanics of biomolecular systems
+November 20, 2017, 3 p.m. – 4 p.m.
+The microscopic or local stress field provides a unique connection between molecular simulations and mechanics of materials at the nanoscale. Lateral stress profiles are routinely used to understand the mechanical behavior of liquid interfaces such as lipid membranes from molecular dynamics (MD) simulations. However, the 1-dimensional stress profiles are not adequate to understand the multidimensional mechanical state in complex asymmetrical systems such as membrane proteins or other macromolecular structures. Furthermore, the fact that the microscopic stress from MD simulations is not uniquely defined is a theoretical consideration that is most often ignored, which has acute practical consequences when atomistic models are considered. I will present our recent work on the development of objective 3D local stress calculations by way of expressions that satisfy balance of linear and angular momentum for force-fields with arbitrarily high many-body interactions. I will show how some definitions of the microscopic stress violate mechanical equilibrium through various examples including defective graphene, lipid membranes, and fibrous proteins. I will also demonstrate the use of the traction vector, computed from the microscopic stress, as a powerful tool to visualize the local balance of forces at an interface. Focusing on the bacterial mechanosensitive channel MscL, I will show how the traction vector allows identification of a unique association pattern of lipids at specific sites on the MscL surface that may mediate gating of the bacterial channel by membrane tension or other stimuli.
+All Faculty, staff and students are invited
+Coffee will be served in the Department of Physics
+SP 367.11  at 2:30  PM
+Information: 514 848-2424 ext. 3270
+Where
+Room CC 115,
+(7141 Sherbrooke W.),
+Speakers
+Dr. Juan Vanegas Assistant Professor, Department of Physics University of Vermont, Burlington, VT
+Organization
+Department of Physics
+Contact
+514-848-2424 ext. 3270
+Category
+Workshops & seminars
+Back to top
+© Concordia University
+Concordia University - Call us at 514-848-2424
+Sir George Williams Campus
+1455 De Maisonneuve Blvd. W.
+Montreal, Quebec, Canada
+H3G 1M8
+Loyola Campus
+7141 Sherbrooke Street W.
+Montreal, Quebec, Canada
+H4B 1R6
+© Concordia University
+Share this page
+Sir George Williams Campus
+1455 De Maisonneuve Blvd. W.
+Montreal, Quebec, Canada
+H3G 1M8
+Loyola Campus
+7141 Sherbrooke Street W.
+Montreal, Quebec, Canada
+H4B 1R6
+© Concordia University

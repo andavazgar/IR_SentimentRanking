@@ -1,0 +1,86 @@
+Concordia University
+https://www.concordia.ca/content/concordia/en/faculty.html
+Study resources
+Campus services
+What's new
+Faculties, Schools & Colleges
+Quick links
+Quick links
+Quick links
+Quick links
+Quick links
+Quick links
+Study resources
+Campus services
+What's new
+Faculties, Schools & Colleges
+Concordia
+Directories
+Search
+/
+Faculty
+Dr. Pablo Bianucci, PhD
+Associate Professor, Physics
+Graduate Program Director, Physics
+Office:
+Richard J. Renaud Science Complex,7141 Sherbrooke W.
+Phone:
+(514) 848-2424 ext. 3352
+Email:
+Website(s):
+Education
+PhD (The University of Texas at Austin)
+Research interests
+Physics and applications of nano- and micro-photonic devices
+Optical properties of nanomaterials
+Interaction of nanomaterials with optical resonators
+Applications of optical resonators
+Research activities
+Micro- and nano-photonics
+Photonics is using light to transfer and process information instead of electrons. Thanks to the properties of photons (the virtual particles that carry light), photonics has the potential for creating faster and more power-efficient devices than electronics. One of the building blocks for photonic circuits is the optical micro-resonator, which keeps light confined in both space and time. Micro-resonators are the basis of many photonic devices, such as filters, modulators, delay lines, etc. We are interested in exploring optical micro-resonators with new geometries and materials for creating new micro- and nano-photonic devices.
+Optical properties of nanomaterials
+The optical properties of semiconductor nanostructures are incredibly rich. In collaboration with , in the Department of Chemistry and Biochemistry, we grow ZnO nanostructures using solution-based methods.
+Slowing down trapped light
+By carefully sculpting periodic patterns in dielectric media it is possible to slow down its group velocity (the velocity at which a wave can carry information). We have combined that patterning with microring resonators, to find the effect of combining confinement of light at the microscale with slow light.
+Simulated magnetic field profile of a resonant mode in a photonic crystal ring resonator
+Photo credit: Kathleen McGarvey-Lechable
+Scanning electron microscope image of a photonic crystal ring resonator fabricated on the Silicon-on-Insulator platform.
+Photo credit: Kathleen McGarvey-Lechable and Amir Hassanpour
+Scanning electron microscope images of patterned nanorods on silicon substrates. Panel A is a view from the top, while insets B and C are 60-degree-tilted views. The Scale bars indicate 1 µm for A and B, and 200 nm for inset C.
+Photo credit: Amir Hassanpour
+Selected publications
+K. McGarvey-Lechable and P. Bianucci, “", Optics Express 25, 3916 (2017)
+A. Hassanpour, N. Bogdan, J. A. Capobianco, and P. Bianucci, “", Materials & Design 119, 464 (2017)
+P. Bianucci, “", Sensors 16, 1841 (2016)
+H. Ghali, H. Chibli, J. L. Nadeau, P. Bianucci, and Y.-A. Peter, “", Biosensors 6, 20 (2016)
+K. McGarvey-Lechable, and P. Bianucci, "", Optics Express 22, 26032 (2014) .
+M. H. Tavakoli-Dastjerdi, M. Djavid, S. Arafin, X. Liu, P. Bianucci, Z. Mi, and P. J. Poole,“”, Semiconductor Science and Technology 28, 094007 (2013)
+P. Bianucci, S. Mukherjee, M. H. Tavakoli-Dastjerdi, P. J. Poole, and Z. Mi,“”, Applied Physics Letters 101, 031104–4 (2012)
+View my .
+Teaching activities
+Analytical mechanics (PHYS 245)
+In this course, we apply calculus and vector calculus to describe and predict the motion of macroscopic objects.
+Solid State Physics (PHYS 358)
+This course is an introduction to the Physics of crystalline materials.
+Back to top
+© Concordia University
+Concordia University - Call us at 514-848-2424
+Sir George Williams Campus
+1455 De Maisonneuve Blvd. W.
+Montreal, Quebec, Canada
+H3G 1M8
+Loyola Campus
+7141 Sherbrooke Street W.
+Montreal, Quebec, Canada
+H4B 1R6
+© Concordia University
+Share this page
+Sir George Williams Campus
+1455 De Maisonneuve Blvd. W.
+Montreal, Quebec, Canada
+H3G 1M8
+Loyola Campus
+7141 Sherbrooke Street W.
+Montreal, Quebec, Canada
+H4B 1R6
+© Concordia University

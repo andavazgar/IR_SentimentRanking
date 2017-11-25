@@ -1,0 +1,30 @@
+Breadcrumb
+My Library
+Search Options (with tips)
+Author
+Title
+Journal Title
+Subject Heading
+Call Number
+---------------------------
+Video Search
+---------------------------
+Advanced Keyword
+Author/Title
+Government Document Number
+ISBN/ISSN/Music Number
+Other Number (OCLC)
+Special Collections
+---------------------------
+Database Search (Name and Subject)
+Search
+Search the library catalogue
+Search type
+Keyword
+Search term
+Location
+To begin using CLUES, enter search terms in the box.
+For specific searches, try "Search Options (with tips)"
+in the blue bar.
+Tools & Quicklinks
+WebPAC PRO © Innovative Interfaces, Inc.
